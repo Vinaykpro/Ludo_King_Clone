@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pnpteamuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9000000">
+
+    <ImageView
+        android:id="@+id/imageView110"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/choosecolornnametxt" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectgamebg2"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/teamuphelpbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="5dp"
+            android:alpha="0.9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/helpround" />
+
+        <ImageView
+            android:id="@+id/t1bp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/t1p1name"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bluepiece" />
+
+        <TextView
+            android:id="@+id/t1p1name"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/usernamebg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Player 1"
+            android:textAlignment="center"
+            android:textColor="#191919"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="@+id/t1bp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/t1bp"
+            app:layout_constraintTop_toTopOf="@+id/t1bp" />
+
+
+        <ImageView
+            android:id="@+id/t1gp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/t1bp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/t1bp"
+            app:layout_constraintTop_toBottomOf="@+id/t1bp"
+            app:srcCompat="@drawable/greenpiece" />
+
+        <TextView
+            android:id="@+id/t1p2name"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:background="@drawable/usernamebg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Player 3"
+            android:textAlignment="center"
+            android:textColor="#191919"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="@+id/t1gp"
+            app:layout_constraintEnd_toEndOf="@id/t1p1name"
+            app:layout_constraintStart_toStartOf="@+id/t1p1name"
+            app:layout_constraintTop_toTopOf="@+id/t1gp" />
+
+        <ImageView
+            android:id="@+id/imageView109"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t1p2name"
+            app:srcCompat="@drawable/teamupvslinebg" />
+
+        <ImageView
+            android:id="@+id/t2rp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/t1gp"
+            app:layout_constraintEnd_toStartOf="@+id/t1p1name"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/t1gp"
+            app:layout_constraintTop_toBottomOf="@id/imageView109"
+            app:srcCompat="@drawable/redpiece" />
+
+        <TextView
+            android:id="@+id/t2p1name"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:background="@drawable/usernamebg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Player 2"
+            android:textAlignment="center"
+            android:textColor="#191919"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="@+id/t2rp"
+            app:layout_constraintEnd_toEndOf="@id/t1p2name"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/t1p2name"
+            app:layout_constraintTop_toTopOf="@+id/t2rp" />
+
+
+        <ImageView
+            android:id="@+id/t2yp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/t2rp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/t2rp"
+            app:layout_constraintTop_toBottomOf="@+id/t2rp"
+            app:srcCompat="@drawable/yellowpiece" />
+
+        <TextView
+            android:id="@+id/t2p2name"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:background="@drawable/usernamebg"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Player 4"
+            android:textAlignment="center"
+            android:textColor="#191919"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="@+id/t2yp"
+            app:layout_constraintEnd_toEndOf="@id/t2p1name"
+            app:layout_constraintStart_toStartOf="@+id/t2p1name"
+            app:layout_constraintTop_toTopOf="@+id/t2yp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/teamupplaybtn"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:srcCompat="@drawable/gamemainplaybtn" />
+
+    <ImageView
+        android:id="@+id/teamupbackbtn"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamupplaybtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/teamupplaybtn"
+        app:srcCompat="@drawable/backbuttonmain" />
+</androidx.constraintlayout.widget.ConstraintLayout>

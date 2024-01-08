@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/choosecolornnamelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/choosecolornnamemainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectgamebg2"
+        android:paddingBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView95"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/choosecolornnametxt" />
+
+        <ImageView
+            android:id="@+id/imageView96"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView95"
+            app:layout_constraintEnd_toEndOf="@+id/imageView95"
+            app:layout_constraintTop_toTopOf="@+id/imageView95"
+            app:srcCompat="@drawable/botsbg" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="0/0"
+            android:textColor="#EDFFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView96"
+            app:layout_constraintEnd_toEndOf="@+id/imageView96"
+            app:layout_constraintTop_toTopOf="@+id/imageView96" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playerdetailsselctiontab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView95">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/p4layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/p4p1p"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="17dp"
+                    app:layout_constraintEnd_toStartOf="@+id/p4p1name"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bluepiece" />
+
+                <RelativeLayout
+                    android:id="@+id/p4p1name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p1p"
+                    app:layout_constraintEnd_toStartOf="@+id/p4botp1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p4p1p"
+                    app:layout_constraintTop_toTopOf="@+id/p4p1p">
+
+                    <TextView
+                        android:id="@+id/p4p1nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 1"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p4botp1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p1name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p4p1name"
+                    app:layout_constraintTop_toTopOf="@+id/p4p1name"
+                    app:srcCompat="@drawable/botbtn" />
+
+
+                <ImageView
+                    android:id="@+id/p4p2p"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintStart_toStartOf="@+id/p4p1p"
+                    app:layout_constraintTop_toBottomOf="@+id/p4p1p"
+                    app:srcCompat="@drawable/redpiece" />
+
+                <RelativeLayout
+                    android:id="@+id/p4p2name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p2p"
+                    app:layout_constraintEnd_toEndOf="@+id/p4p1name"
+                    app:layout_constraintStart_toStartOf="@+id/p4p1name"
+                    app:layout_constraintTop_toTopOf="@+id/p4p2p">
+
+                    <TextView
+                        android:id="@+id/p4p2nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 2"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p4botp2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p2name"
+                    app:layout_constraintEnd_toEndOf="@+id/p4botp1"
+                    app:layout_constraintStart_toStartOf="@+id/p4botp1"
+                    app:layout_constraintTop_toTopOf="@+id/p4p2name"
+                    app:srcCompat="@drawable/botbtn" />
+
+
+                <ImageView
+                    android:id="@+id/p4p3p"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintStart_toStartOf="@+id/p4p2p"
+                    app:layout_constraintTop_toBottomOf="@+id/p4p2p"
+                    app:srcCompat="@drawable/greenpiece" />
+
+                <RelativeLayout
+                    android:id="@+id/p4p3name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p3p"
+                    app:layout_constraintEnd_toEndOf="@+id/p4p2name"
+                    app:layout_constraintStart_toStartOf="@+id/p4p2name"
+                    app:layout_constraintTop_toTopOf="@+id/p4p3p">
+
+                    <TextView
+                        android:id="@+id/p4p3nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 3"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p4botp3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p3name"
+                    app:layout_constraintEnd_toEndOf="@+id/p4botp2"
+                    app:layout_constraintStart_toStartOf="@+id/p4botp2"
+                    app:layout_constraintTop_toTopOf="@+id/p4p3name"
+                    app:srcCompat="@drawable/botbtn" />
+
+
+                <ImageView
+                    android:id="@+id/p4p4p"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintStart_toStartOf="@+id/p4p3p"
+                    app:layout_constraintTop_toBottomOf="@+id/p4p3p"
+                    app:srcCompat="@drawable/yellowpiece" />
+
+                <RelativeLayout
+                    android:id="@+id/p4p4name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p4p"
+                    app:layout_constraintEnd_toEndOf="@+id/p4p3name"
+                    app:layout_constraintStart_toStartOf="@+id/p4p3name"
+                    app:layout_constraintTop_toTopOf="@+id/p4p4p">
+
+                    <TextView
+                        android:id="@+id/p4p4nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 4"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p4botp4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p4name"
+                    app:layout_constraintEnd_toEndOf="@+id/p4botp3"
+                    app:layout_constraintStart_toStartOf="@+id/p4botp3"
+                    app:layout_constraintTop_toTopOf="@+id/p4p4name"
+                    app:srcCompat="@drawable/botbtn" />
+
+
+                <ImageView
+                    android:id="@+id/p4p5p"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintStart_toStartOf="@+id/p4p4p"
+                    app:layout_constraintTop_toBottomOf="@+id/p4p4p"
+                    app:srcCompat="@drawable/orangepiece" />
+
+                <RelativeLayout
+                    android:id="@+id/p4p5name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p5p"
+                    app:layout_constraintEnd_toEndOf="@+id/p4p4name"
+                    app:layout_constraintStart_toStartOf="@+id/p4p4name"
+                    app:layout_constraintTop_toTopOf="@+id/p4p5p">
+
+                    <TextView
+                        android:id="@+id/p4p5nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 5"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p4botp5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p5name"
+                    app:layout_constraintEnd_toEndOf="@+id/p4botp4"
+                    app:layout_constraintStart_toStartOf="@+id/p4botp4"
+                    app:layout_constraintTop_toTopOf="@+id/p4p5name"
+                    app:srcCompat="@drawable/botbtn" />
+
+
+                <ImageView
+                    android:id="@+id/p4p6p"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintStart_toStartOf="@+id/p4p5p"
+                    app:layout_constraintTop_toBottomOf="@+id/p4p5p"
+                    app:srcCompat="@drawable/purplepiece" />
+
+                <RelativeLayout
+                    android:id="@+id/p4p6name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p6p"
+                    app:layout_constraintEnd_toEndOf="@+id/p4p5name"
+                    app:layout_constraintStart_toStartOf="@+id/p4p5name"
+                    app:layout_constraintTop_toTopOf="@+id/p4p6p">
+
+                    <TextView
+                        android:id="@+id/p4p6nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 6"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p4botp6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p4p6name"
+                    app:layout_constraintEnd_toEndOf="@+id/p4botp5"
+                    app:layout_constraintStart_toStartOf="@+id/p4botp5"
+                    app:layout_constraintTop_toTopOf="@+id/p4p6name"
+                    app:srcCompat="@drawable/botbtn" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/p3layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="29dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/p3pl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintEnd_toStartOf="@+id/p3p1name"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/p3pl1b"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/greenunselectedcircle"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/bluepiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl1r"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/redpiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl1g"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/greenpiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl1y"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/yellowpiece" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/p3p1name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p3pl1"
+                    app:layout_constraintEnd_toStartOf="@+id/p3botp1"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p3pl1"
+                    app:layout_constraintTop_toTopOf="@+id/p3pl1">
+
+                    <TextView
+                        android:id="@+id/p3p1nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 1"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p3botp1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p3p1name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/p3p1name"
+                    app:layout_constraintTop_toTopOf="@+id/p3p1name"
+                    app:srcCompat="@drawable/botbtn" />
+
+                <LinearLayout
+                    android:id="@+id/p3pl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintStart_toStartOf="@+id/p3pl1"
+                    app:layout_constraintTop_toBottomOf="@id/p3pl1">
+
+                    <ImageView
+                        android:id="@+id/p3pl2b"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/bluepiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl2r"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/greenunselectedcircle"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/redpiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl2g"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/greenpiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl2y"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/yellowpiece" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/p3p2name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p3pl2"
+                    app:layout_constraintStart_toEndOf="@+id/p3pl2"
+                    app:layout_constraintTop_toTopOf="@+id/p3pl2">
+
+                    <TextView
+                        android:id="@+id/p3p2nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 2"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p3botp2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p3p2name"
+                    app:layout_constraintStart_toEndOf="@+id/p3p2name"
+                    app:layout_constraintTop_toTopOf="@+id/p3p2name"
+                    app:srcCompat="@drawable/botbtn" />
+
+                <LinearLayout
+                    android:id="@+id/p3pl3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintStart_toStartOf="@+id/p3pl2"
+                    app:layout_constraintTop_toBottomOf="@id/p3pl2">
+
+                    <ImageView
+                        android:id="@+id/p3pl3b"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/bluepiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl3r"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/redpiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl3g"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/greenunselectedcircle"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/greenpiece" />
+
+                    <ImageView
+                        android:id="@+id/p3pl3y"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/yellowpiece" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/p3p3name"
+                    android:layout_width="110dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/usernamebg"
+                    app:layout_constraintBottom_toBottomOf="@+id/p3pl3"
+                    app:layout_constraintStart_toEndOf="@+id/p3pl3"
+                    app:layout_constraintTop_toTopOf="@+id/p3pl3">
+
+                    <TextView
+                        android:id="@+id/p3p3nametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Player 3"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/p3botp3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/p3p3name"
+                    app:layout_constraintStart_toEndOf="@+id/p3p3name"
+                    app:layout_constraintTop_toTopOf="@+id/p3p3name"
+                    app:srcCompat="@drawable/botbtn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/p2playout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bluegreentype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView105"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView97"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/greenselectedcircle" />
+
+                    <ImageView
+                        android:id="@+id/imageView97"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="35dp"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView98"
+                        app:layout_constraintEnd_toStartOf="@+id/t1name1"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bluepiece" />
+
+                    <RelativeLayout
+                        android:id="@+id/t1name1"
+                        android:layout_width="110dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/usernamebg"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView97"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imageView97"
+                        app:layout_constraintTop_toTopOf="@+id/imageView97">
+
+                        <TextView
+                            android:id="@+id/t1name1textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="-1dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Player 1"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView98"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/imageView97"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView97"
+                        app:srcCompat="@drawable/greenpiece" />
+
+                    <RelativeLayout
+                        android:id="@+id/t1name2"
+                        android:layout_width="110dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/usernamebg"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView98"
+                        app:layout_constraintStart_toEndOf="@+id/imageView98"
+                        app:layout_constraintTop_toTopOf="@+id/imageView98">
+
+                        <TextView
+                            android:id="@+id/t1name2textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="-1dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Player 2"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/redyellowtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:foreground="#ae000000"
+                    android:paddingTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bluegreentype">
+
+                    <ImageView
+                        android:id="@+id/imageView106"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView99"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/greenunselectedcircle" />
+
+                    <ImageView
+                        android:id="@+id/imageView99"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView100"
+                        app:layout_constraintEnd_toStartOf="@+id/t2name1"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/redpiece" />
+
+                    <RelativeLayout
+                        android:id="@+id/t2name1"
+                        android:layout_width="110dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/usernamebg"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView99"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imageView99"
+                        app:layout_constraintTop_toTopOf="@+id/imageView99">
+
+                        <TextView
+                            android:id="@+id/t2name1textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="-1dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Player 1"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView100"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/imageView99"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView99"
+                        app:srcCompat="@drawable/yellowpiece" />
+
+                    <RelativeLayout
+                        android:id="@+id/t2name2"
+                        android:layout_width="110dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/usernamebg"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView100"
+                        app:layout_constraintStart_toEndOf="@+id/imageView100"
+                        app:layout_constraintTop_toTopOf="@+id/imageView100">
+
+                        <TextView
+                            android:id="@+id/t2name2textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="-1dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Player 2"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/npbg2p"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/npbg3p"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerdetailsselctiontab"
+            app:srcCompat="@drawable/npbtnbg" />
+
+        <ImageView
+            android:id="@+id/p2ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg2p"
+            app:layout_constraintEnd_toEndOf="@+id/npbg2p"
+            app:layout_constraintStart_toStartOf="@+id/npbg2p"
+            app:layout_constraintTop_toTopOf="@+id/npbg2p"
+            app:srcCompat="@drawable/p2ptxt" />
+
+        <ImageView
+            android:id="@+id/npbg3p"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg2p"
+            app:layout_constraintEnd_toStartOf="@+id/npbg4p"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/npbg2p"
+            app:layout_constraintTop_toTopOf="@+id/npbg2p"
+            app:srcCompat="@drawable/npbtnbg" />
+
+        <ImageView
+            android:id="@+id/p3ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg3p"
+            app:layout_constraintEnd_toEndOf="@+id/npbg3p"
+            app:layout_constraintStart_toStartOf="@+id/npbg3p"
+            app:layout_constraintTop_toTopOf="@+id/npbg3p"
+            app:srcCompat="@drawable/p3ptxt" />
+
+        <ImageView
+            android:id="@+id/npbg4p"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg3p"
+            app:layout_constraintEnd_toStartOf="@+id/npbg5p"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/npbg3p"
+            app:layout_constraintTop_toTopOf="@+id/npbg3p"
+            app:srcCompat="@drawable/npbtnbg" />
+
+        <ImageView
+            android:id="@+id/p4ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg4p"
+            app:layout_constraintEnd_toEndOf="@+id/npbg4p"
+            app:layout_constraintStart_toStartOf="@+id/npbg4p"
+            app:layout_constraintTop_toTopOf="@+id/npbg4p"
+            app:srcCompat="@drawable/p4ptxt" />
+
+        <ImageView
+            android:id="@+id/npbg5p"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg4p"
+            app:layout_constraintEnd_toStartOf="@+id/npbg6p"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/npbg4p"
+            app:layout_constraintTop_toTopOf="@+id/npbg4p"
+            app:srcCompat="@drawable/npbtnbg" />
+
+        <ImageView
+            android:id="@+id/p5ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg5p"
+            app:layout_constraintEnd_toEndOf="@+id/npbg5p"
+            app:layout_constraintStart_toStartOf="@+id/npbg5p"
+            app:layout_constraintTop_toTopOf="@+id/npbg5p"
+            app:srcCompat="@drawable/p5ptxt" />
+
+        <ImageView
+            android:id="@+id/npbg6p"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg5p"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/npbg5p"
+            app:layout_constraintTop_toTopOf="@+id/npbg5p"
+            app:srcCompat="@drawable/npbtnbg" />
+
+        <ImageView
+            android:id="@+id/p6ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="@+id/npbg6p"
+            app:layout_constraintEnd_toEndOf="@+id/npbg6p"
+            app:layout_constraintStart_toStartOf="@+id/npbg6p"
+            app:layout_constraintTop_toTopOf="@+id/npbg6p"
+            app:srcCompat="@drawable/p6ptxt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/choosecolornnamebackbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passnplaymainplaybtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passnplaymainplaybtn"
+        app:srcCompat="@drawable/backbuttonmain" />
+
+    <ImageView
+        android:id="@+id/passnplaymainplaybtn"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosecolornnamemainlayout"
+        app:srcCompat="@drawable/gamemainplaybtn" />
+
+    <ImageView
+        android:id="@+id/imageView111"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintEnd_toEndOf="@+id/passnplaymainplaybtn"
+        app:layout_constraintStart_toStartOf="@+id/passnplaymainplaybtn"
+        app:layout_constraintTop_toBottomOf="@+id/passnplaymainplaybtn"
+        app:srcCompat="@drawable/playonetokenoutbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

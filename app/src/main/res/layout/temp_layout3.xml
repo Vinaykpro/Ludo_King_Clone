@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/computerlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9000000">
+
+    <ImageView
+        android:id="@+id/computerselectgamebackbtn"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/computernxtbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/computernxtbtn"
+        app:srcCompat="@drawable/backbuttonmain" />
+
+    <ImageView
+        android:id="@+id/computernxtbtn"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computerurcolorlayout"
+        app:srcCompat="@drawable/nextbtn" />
+
+    <ImageView
+        android:id="@+id/compl1topthemes"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/computerurcolorlayout"
+        app:layout_constraintEnd_toEndOf="@+id/computerurcolorlayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/computerurcolorlayout"
+        app:srcCompat="@drawable/passnplaytoplogo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/computerurcolorlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/settingsbg2"
+        android:paddingBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView107"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/selectgametxt" />
+
+        <ImageView
+            android:id="@+id/computerclassicbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView107"
+            app:srcCompat="@drawable/computerclassicselectedtab" />
+
+        <ImageView
+            android:id="@+id/computerrushmodebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/computerclassicbtn"
+            app:srcCompat="@drawable/computerrushunselectedtab" />
+
+        <ImageView
+            android:id="@+id/computerhelpbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="42dp"
+            app:layout_constraintBottom_toBottomOf="@+id/computerrushmodebtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/computerrushmodebtn"
+            app:srcCompat="@drawable/helpround" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

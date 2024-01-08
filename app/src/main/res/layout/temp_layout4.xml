@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/computerclassiclayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9000000">
+
+    <ImageView
+        android:id="@+id/compl2topthemes"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/computerurcolorlayout"
+        app:layout_constraintEnd_toEndOf="@+id/computerurcolorlayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/computerurcolorlayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/passnplaytoplogo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/computerurcolorlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/settingsbg"
+        android:paddingBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/computerselecturplayerslayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compl2topthemes"
+        app:layout_constraintVertical_bias="0.501">
+
+        <ImageView
+            android:id="@+id/imageView107"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/selecturcolortxt" />
+
+        <ImageView
+            android:id="@+id/imageView116"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView117"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView107"
+            app:srcCompat="@drawable/bluepiece" />
+
+        <ImageView
+            android:id="@+id/imageView117"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView116"
+            app:layout_constraintEnd_toStartOf="@+id/imageView120"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView116"
+            app:layout_constraintTop_toTopOf="@+id/imageView116"
+            app:srcCompat="@drawable/redpiece" />
+
+        <ImageView
+            android:id="@+id/imageView120"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView117"
+            app:layout_constraintEnd_toStartOf="@+id/imageView121"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView117"
+            app:layout_constraintTop_toTopOf="@+id/imageView117"
+            app:srcCompat="@drawable/greenpiece" />
+
+        <ImageView
+            android:id="@+id/imageView121"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView120"
+            app:layout_constraintTop_toTopOf="@+id/imageView120"
+            app:srcCompat="@drawable/yellowpiece" />
+
+        <ImageView
+            android:id="@+id/imageView122"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView116"
+            app:layout_constraintStart_toStartOf="@+id/imageView116"
+            app:layout_constraintTop_toBottomOf="@+id/imageView116"
+            app:srcCompat="@drawable/bluetick" />
+
+        <ImageView
+            android:id="@+id/imageView123"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView122"
+            app:layout_constraintEnd_toEndOf="@+id/imageView117"
+            app:layout_constraintStart_toStartOf="@+id/imageView117"
+            app:layout_constraintTop_toTopOf="@+id/imageView122"
+            app:srcCompat="@drawable/redcircle_unfilled" />
+
+        <ImageView
+            android:id="@+id/imageView124"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView123"
+            app:layout_constraintEnd_toEndOf="@+id/imageView120"
+            app:layout_constraintStart_toStartOf="@+id/imageView120"
+            app:layout_constraintTop_toTopOf="@+id/imageView123"
+            app:srcCompat="@drawable/greencircle_unfilled" />
+
+        <ImageView
+            android:id="@+id/imageView125"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView124"
+            app:layout_constraintEnd_toEndOf="@+id/imageView121"
+            app:layout_constraintStart_toStartOf="@+id/imageView121"
+            app:layout_constraintTop_toTopOf="@+id/imageView124"
+            app:srcCompat="@drawable/yellowcircle_unfilled" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/computerselecturplayerslayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settingsbg"
+        android:paddingBottom="18dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/computermainplaybtn"
+        app:layout_constraintEnd_toEndOf="@+id/computerurcolorlayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/computerurcolorlayout"
+        app:layout_constraintTop_toBottomOf="@+id/computerurcolorlayout">
+
+        <ImageView
+            android:id="@+id/imageView126"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/selectplayerstxt" />
+
+        <ImageView
+            android:id="@+id/imageView127"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/comp2playerstxtviewnouse"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView126"
+            app:srcCompat="@drawable/selectfill" />
+
+        <TextView
+            android:id="@+id/comp2playerstxtviewnouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="2 PLAYERS"
+            android:textColor="#F1F1F1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView127"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView127"
+            app:layout_constraintTop_toTopOf="@+id/imageView127" />
+
+        <ImageView
+            android:id="@+id/imageView128"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/imageView127"
+            app:layout_constraintTop_toBottomOf="@+id/imageView127"
+            app:srcCompat="@drawable/selectblank" />
+
+        <TextView
+            android:id="@+id/comp4playerstxtviewnouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="4 PLAYERS"
+            android:textColor="#F1F1F1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView128"
+            app:layout_constraintEnd_toEndOf="@+id/comp2playerstxtviewnouse"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView127"
+            app:layout_constraintStart_toStartOf="@+id/comp2playerstxtviewnouse"
+            app:layout_constraintTop_toTopOf="@+id/imageView128" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/computermainplaybtn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computerselecturplayerslayout"
+        app:srcCompat="@drawable/gamemainplaybtn" />
+
+    <ImageView
+        android:id="@+id/compl2backbtn2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/computermainplaybtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/computermainplaybtn"
+        app:srcCompat="@drawable/backbuttonmain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

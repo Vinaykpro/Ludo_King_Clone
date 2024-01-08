@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/adf1" android:duration="48" />
+    <item android:drawable="@drawable/adf2" android:duration="48" />
+    <item android:drawable="@drawable/adf3" android:duration="48" />
+    <item android:drawable="@drawable/adf4" android:duration="48" />
+    <item android:drawable="@drawable/adf5" android:duration="48" />
+    <item android:drawable="@drawable/adf6" android:duration="48" />
+    <item android:drawable="@drawable/adf7" android:duration="48" />
+    <item android:drawable="@drawable/adf8" android:duration="48" />
+    <item android:drawable="@drawable/adf9" android:duration="48" />
+    <item android:drawable="@drawable/adf10" android:duration="48" />
+    <item android:drawable="@drawable/adf11" android:duration="48" />
+    <item android:drawable="@drawable/adf12" android:duration="48" />
+    <item android:drawable="@drawable/adf13" android:duration="48" />
+    <item android:drawable="@drawable/adf14" android:duration="48" />
+    <item android:drawable="@drawable/adf15" android:duration="48" />
+    <item android:drawable="@drawable/adf16" android:duration="48" />
+    <item android:drawable="@drawable/adf17" android:duration="48" />
+    <item android:drawable="@drawable/adf18" android:duration="48" />
+    <item android:drawable="@drawable/adf19" android:duration="48" />
+    <item android:drawable="@drawable/adf20" android:duration="48" />
+    <item android:drawable="@drawable/adf21" android:duration="48" />
+    <item android:drawable="@drawable/adf22" android:duration="48" />
+    <item android:drawable="@drawable/adf23" android:duration="48" />
+    <item android:drawable="@drawable/adf24" android:duration="48" />
+    <item android:drawable="@drawable/adf25" android:duration="48" />
+    <item android:drawable="@drawable/adf26" android:duration="48" />
+    <item android:drawable="@drawable/adf27" android:duration="48" />
+    <item android:drawable="@drawable/adf28" android:duration="48" />
+    <item android:drawable="@drawable/adf29" android:duration="48" />
+
+</animation-list>

@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activitybg"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmaze"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:rotation="180"
+            app:srcCompat="@drawable/ludofinalboard3" />
+
+        <ImageView
+            android:id="@+id/p1exitbox"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="1dp"
+            android:elevation="0dp"
+            android:rotationY="180"
+            android:visibility="gone"
+            app:srcCompat="@drawable/blueexitbox" />
+
+        <ImageView
+            android:id="@+id/p2exitbox"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:elevation="0dp"
+            android:rotationY="180"
+            android:visibility="gone"
+            app:srcCompat="@drawable/redexitbox" />
+
+        <ImageView
+            android:id="@+id/p3exitbox"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:elevation="0dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/greenexitbox" />
+
+        <ImageView
+            android:id="@+id/p4exitbox"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:elevation="0dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/yellowexitbox" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/box" />
+
+        <View
+            android:id="@+id/step1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle_shaded"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/step2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle_shaded"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/step3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle_shaded"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/step4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle_shaded"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/step5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle_shaded"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/step6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/red_circle_shaded"
+            android:visibility="gone" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/redpiece1"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/red1activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/redpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/redpiece2"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView72"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView62"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/red2activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView62"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView62"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/redpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/redpiece3"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView73"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView63"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/red3activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView63"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/redpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/redpiece4"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView74"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView64"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/red4activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView64"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView64"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/redpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/greenpiece1"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView81"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView51"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/green1activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView51"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView51"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/greenpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/greenpiece2"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView82"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView52"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/green2activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView52"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView52"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/greenpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/greenpiece3"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView83"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView53"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/green3activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView53"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView53"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/greenpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/greenpiece4"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView84"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView54"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/green4activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView54"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView54"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/greenpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bluepiece1"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView91"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/blue1activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bluepiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bluepiece2"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView92"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView42"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/blue2activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView42"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bluepiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bluepiece3"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView93"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView43"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/blue3activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView43"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bluepiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bluepiece4"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView94"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView44"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/blue4activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView44"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bluepiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yellowpiece1"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteY="30dp">
+
+            <ImageView
+                android:id="@+id/imageView101"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/yellow1activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yellowpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yellowpiece2"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteY="30dp">
+
+            <ImageView
+                android:id="@+id/imageView102"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/yellow2activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yellowpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yellowpiece3"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteY="30dp">
+
+            <ImageView
+                android:id="@+id/imageView103"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/yellow3activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yellowpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/yellowpiece4"
+            android:layout_width="34dp"
+            android:layout_height="54dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteY="30dp">
+
+            <ImageView
+                android:id="@+id/imageView104"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView34"
+                app:srcCompat="@drawable/innercircle" />
+
+            <ImageView
+                android:id="@+id/yellow4activecircle"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="-18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView34"
+                app:srcCompat="@drawable/outercircle" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/yellowpiece" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trightdicebg"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="-25dp"
+        android:background="@drawable/dice_pad_right"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.3">
+
+        <ImageView
+            android:id="@+id/trightpieceimage"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/yellowpiece" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tleftdicebg"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-25dp"
+        android:background="@drawable/dice_pad_left"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.3">
+
+        <ImageView
+            android:id="@+id/tleftpieceimage"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/greenpiece" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/brightdicebg"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/dice_pad_right"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.3">
+
+        <ImageView
+            android:id="@+id/brightpieceimage"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bluepiece" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bleftdicebg"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dice_pad_left"
+        android:backgroundTintMode="add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.3">
+
+        <ImageView
+            android:id="@+id/bleftpieceimage"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/redpiece" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/hintarrowleft"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bleftdicebg"
+        app:layout_constraintStart_toEndOf="@+id/bleftdicebg"
+        app:layout_constraintTop_toTopOf="@+id/bleftdicebg"
+        app:srcCompat="@drawable/arrow_dice_hint_right" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pname1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/rcbold"
+        android:paddingStart="4dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="1dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:text="p1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/pname2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/rcbold"
+        android:paddingStart="4dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="1dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:text="p2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/pname3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/rcbold"
+        android:paddingStart="4dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="1dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:text="p3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/pname4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/rcbold"
+        android:paddingStart="4dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="1dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:text="p4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <ImageView
+        android:id="@+id/winnercrownindex1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/winnercrown" />
+
+    <ImageView
+        android:id="@+id/winnerindexnumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/winnercrownindex1"
+        app:layout_constraintEnd_toEndOf="@+id/winnercrownindex1"
+        app:layout_constraintStart_toStartOf="@+id/winnercrownindex1"
+        app:layout_constraintTop_toTopOf="@+id/winnercrownindex1"
+        app:srcCompat="@drawable/winner1number" />
+
+    <ImageView
+        android:id="@+id/winnercrownindex2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/winnercrown" />
+
+    <ImageView
+        android:id="@+id/winnerindexnumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/winnercrownindex2"
+        app:layout_constraintEnd_toEndOf="@+id/winnercrownindex2"
+        app:layout_constraintStart_toStartOf="@+id/winnercrownindex2"
+        app:layout_constraintTop_toTopOf="@+id/winnercrownindex2"
+        app:srcCompat="@drawable/winner2number" />
+
+    <ImageView
+        android:id="@+id/winnercrownindex3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/winnercrown" />
+
+    <ImageView
+        android:id="@+id/winnerindexnumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/winnercrownindex3"
+        app:layout_constraintEnd_toEndOf="@+id/winnercrownindex3"
+        app:layout_constraintStart_toStartOf="@+id/winnercrownindex3"
+        app:layout_constraintTop_toTopOf="@+id/winnercrownindex3"
+        app:srcCompat="@drawable/winner3number" />
+
+    <ImageView
+        android:id="@+id/winnercrownindex4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintWidth_percent="0.4"
+        app:srcCompat="@drawable/winnercrown" />
+
+    <ImageView
+        android:id="@+id/winnerindexnumber4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/winnercrownindex4"
+        app:layout_constraintEnd_toEndOf="@+id/winnercrownindex4"
+        app:layout_constraintStart_toStartOf="@+id/winnercrownindex4"
+        app:layout_constraintTop_toTopOf="@+id/winnercrownindex4"
+        app:srcCompat="@drawable/winner4number" />
+
+    <ImageView
+        android:id="@+id/gamestartimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gamestarticon" />
+
+    <ImageView
+        android:id="@+id/maindiceimageview"
+        android:layout_width="74dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bleftdicebg"
+        app:layout_constraintEnd_toEndOf="@+id/bleftdicebg"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageView
+        android:id="@+id/ingamemenubtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ingamemenubtn" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ingamemenuitemslayout"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="-3dp"
+        android:background="@drawable/ingamemenubg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ingamemenubtn"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/rmpitemmenu"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/removeplayersbgmenuitem" />
+
+        <ImageView
+            android:id="@+id/exititemmenu"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rmpitemmenu"
+            app:srcCompat="@drawable/exitbgmenuitem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/congratulationsscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fireworksview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.5"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView115"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fireworksimg" />
+
+        <ImageView
+            android:id="@+id/imageView115"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginBottom="-15dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView118"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/congratsscreentoplogo" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="#80000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView115" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/winnerslistinnerlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/settingsbg"
+            android:paddingTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/winnerpositionlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/winnerlistpname1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/rcbold"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="5"
+                        android:text="Player 1"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/winnerlistp1"
+                        app:layout_constraintStart_toEndOf="@+id/winnerlistp1"
+                        app:layout_constraintTop_toTopOf="@+id/winnerlistp1" />
+
+                    <ImageView
+                        android:id="@+id/winnerliscrown1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/listwinner1crown" />
+
+                    <ImageView
+                        android:id="@+id/winnerlistp1"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/winnerliscrown1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bluepiece" />
+
+                    <ImageView
+                        android:id="@+id/winorlose1"
+                        android:layout_width="100dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/winner1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/winnerpositionlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/winnerpositionlayout1">
+
+                    <TextView
+                        android:id="@+id/winnerlistpname2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/rcbold"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="5"
+                        android:text="Player 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/winnerlistp2"
+                        app:layout_constraintStart_toEndOf="@+id/winnerlistp2"
+                        app:layout_constraintTop_toTopOf="@+id/winnerlistp2" />
+
+                    <ImageView
+                        android:id="@+id/winnerliscrown2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/listwinner2crown" />
+
+                    <ImageView
+                        android:id="@+id/winnerlistp2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/winnerliscrown2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/redpiece" />
+
+                    <ImageView
+                        android:id="@+id/winorlose2"
+                        android:layout_width="100dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/loser1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/winnerpositionlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/winnerpositionlayout2">
+
+                    <TextView
+                        android:id="@+id/winnerlistpname3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/rcbold"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="5"
+                        android:text="Player 3"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/winnerlistp3"
+                        app:layout_constraintStart_toEndOf="@+id/winnerlistp3"
+                        app:layout_constraintTop_toTopOf="@+id/winnerlistp3" />
+
+                    <ImageView
+                        android:id="@+id/winnerliscrown3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/listwinner3crown" />
+
+                    <ImageView
+                        android:id="@+id/winnerlistp3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/winnerliscrown3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/greenpiece" />
+
+                    <ImageView
+                        android:id="@+id/winorlose3"
+                        android:layout_width="100dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/loser1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/winnerpositionlayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/winnerpositionlayout3">
+
+                    <TextView
+                        android:id="@+id/winnerlistpname4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/rcbold"
+                        android:gravity="center"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="5"
+                        android:text="Player 4"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/winnerlistp4"
+                        app:layout_constraintStart_toEndOf="@+id/winnerlistp4"
+                        app:layout_constraintTop_toTopOf="@+id/winnerlistp4" />
+
+                    <ImageView
+                        android:id="@+id/winnerliscrown4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/listwinner1crown" />
+
+                    <ImageView
+                        android:id="@+id/winnerlistp4"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/winnerliscrown4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/yellowpiece" />
+
+                    <ImageView
+                        android:id="@+id/winorlose4"
+                        android:layout_width="100dp"
+                        android:layout_height="22dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/loser1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView114"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/congratsscreensoundbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"
+                app:srcCompat="@drawable/computerwinsnlosesbg" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/teamslayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/congratsscreensoundbtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView132"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/team1header" />
+
+                <ImageView
+                    android:id="@+id/imageView137"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/team1name2"
+                    app:srcCompat="@drawable/team2header" />
+
+                <ImageView
+                    android:id="@+id/imageView133"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView132"
+                    app:srcCompat="@drawable/bluepiece" />
+
+                <ImageView
+                    android:id="@+id/imageView138"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView137"
+                    app:srcCompat="@drawable/redpiece" />
+
+                <ImageView
+                    android:id="@+id/imageView140"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView138"
+                    app:srcCompat="@drawable/yellowpiece" />
+
+                <ImageView
+                    android:id="@+id/imageView135"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView133"
+                    app:srcCompat="@drawable/greenpiece" />
+
+                <TextView
+                    android:id="@+id/team1name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 1"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView133"
+                    app:layout_constraintStart_toEndOf="@+id/imageView133"
+                    app:layout_constraintTop_toTopOf="@+id/imageView133"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.4" />
+
+                <TextView
+                    android:id="@+id/team2name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 2"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView138"
+                    app:layout_constraintStart_toEndOf="@+id/imageView138"
+                    app:layout_constraintTop_toTopOf="@+id/imageView138"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.4" />
+
+                <TextView
+                    android:id="@+id/team2name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 4"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView140"
+                    app:layout_constraintTop_toTopOf="@+id/imageView140"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.4" />
+
+                <TextView
+                    android:id="@+id/team1name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 3"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView135"
+                    app:layout_constraintStart_toEndOf="@+id/imageView135"
+                    app:layout_constraintTop_toTopOf="@+id/imageView135"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintWidth_percent="0.4" />
+
+                <ImageView
+                    android:id="@+id/imageView134"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/team1name1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/team1name1"
+                    app:srcCompat="@drawable/winner1" />
+
+                <ImageView
+                    android:id="@+id/imageView136"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/team1name2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/team1name2"
+                    app:srcCompat="@drawable/winner1" />
+
+                <ImageView
+                    android:id="@+id/imageView139"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/team2name1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/team2name1"
+                    app:srcCompat="@drawable/loser1" />
+
+                <ImageView
+                    android:id="@+id/imageView141"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/team2name2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/team2name2"
+                    app:srcCompat="@drawable/loser1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/userwins"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/rcbold"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="5"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView114"
+                app:layout_constraintEnd_toStartOf="@+id/userloses"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/imageView114"
+                app:layout_constraintTop_toTopOf="@+id/imageView114"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <TextView
+                android:id="@+id/userloses"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/rcbold"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:shadowRadius="5"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView114"
+                app:layout_constraintEnd_toEndOf="@+id/imageView114"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/userwins"
+                app:layout_constraintTop_toTopOf="@+id/imageView114"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.4" />
+
+            <ImageView
+                android:id="@+id/congratsscreenmenubtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/congratsscreensoundbtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/rmpmenubtn" />
+
+            <ImageView
+                android:id="@+id/congratsscreenreplaybtn"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/congratssharebtn"
+                app:srcCompat="@drawable/replaybtn" />
+
+            <ImageView
+                android:id="@+id/congratsscreensoundbtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/congratssharebtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/congratsscreenmenubtn"
+                app:layout_constraintTop_toTopOf="@+id/congratsscreenmenubtn"
+                app:srcCompat="@drawable/soundon" />
+
+            <ImageView
+                android:id="@+id/congratssharebtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/congratsscreenreplaybtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/congratsscreensoundbtn"
+                app:layout_constraintTop_toTopOf="@+id/congratsscreenmenubtn"
+                app:srcCompat="@drawable/sharebtn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView118"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/winnerslistinnerlayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/winnerslistinnerlayout"
+            app:srcCompat="@drawable/congratsscrolliconwinnerlist" />
+
+        <ImageView
+            android:id="@+id/imageView119"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView118"
+            app:layout_constraintStart_toStartOf="@+id/imageView118"
+            app:layout_constraintTop_toTopOf="@+id/imageView118"
+            app:srcCompat="@drawable/newglow" />
+
+        <ImageView
+            android:id="@+id/imageView129"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="120dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView118"
+            app:layout_constraintTop_toTopOf="@+id/imageView118"
+            app:srcCompat="@drawable/newglow" />
+
+        <ImageView
+            android:id="@+id/imageView130"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="12dp"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView118"
+            app:layout_constraintTop_toTopOf="@+id/imageView118"
+            app:srcCompat="@drawable/newglow" />
+
+        <ImageView
+            android:id="@+id/imageView131"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="15dp"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView118"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/newglow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ingamermplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/statisticsbg"
+            android:paddingBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView108"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/removeplayerstxt" />
+
+            <ImageView
+                android:id="@+id/imageView112"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView108"
+                app:srcCompat="@drawable/whodontwanttoplaytxt" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rmp1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/removeplayerslistbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView112">
+
+                <ImageView
+                    android:id="@+id/rmp1piece"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bluepiece" />
+
+                <TextView
+                    android:id="@+id/rmp1name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:text="Player 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rmp1piece"
+                    app:layout_constraintStart_toEndOf="@+id/rmp1piece"
+                    app:layout_constraintTop_toTopOf="@+id/rmp1piece" />
+
+                <ImageView
+                    android:id="@+id/rmp1btn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/removeplayerbtnicon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rmp2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/removeplayerslistbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rmp1">
+
+                <ImageView
+                    android:id="@+id/rmp2piece"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/redpiece" />
+
+                <TextView
+                    android:id="@+id/rmp2name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:text="Player 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rmp2piece"
+                    app:layout_constraintStart_toEndOf="@+id/rmp2piece"
+                    app:layout_constraintTop_toTopOf="@+id/rmp2piece" />
+
+                <ImageView
+                    android:id="@+id/rmp2btn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/removeplayerbtnicon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rmp3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/removeplayerslistbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rmp2">
+
+                <ImageView
+                    android:id="@+id/rmp3piece"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/greenpiece" />
+
+                <TextView
+                    android:id="@+id/rmp3name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:text="Player 3"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rmp3piece"
+                    app:layout_constraintStart_toEndOf="@+id/rmp3piece"
+                    app:layout_constraintTop_toTopOf="@+id/rmp3piece" />
+
+                <ImageView
+                    android:id="@+id/rmp3btn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/removeplayerbtnicon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rmp4"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:alpha="1"
+                android:background="@drawable/removeplayerslistbg"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rmp3">
+
+                <ImageView
+                    android:id="@+id/rmp4piece"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/yellowpiece" />
+
+                <TextView
+                    android:id="@+id/rmp4name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:text="Player 4"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rmp4piece"
+                    app:layout_constraintStart_toEndOf="@+id/rmp4piece"
+                    app:layout_constraintTop_toTopOf="@+id/rmp4piece" />
+
+                <ImageView
+                    android:id="@+id/rmp4btn"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/removeplayerbtnicon" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/rmpbackbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:scaleX="1.15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rmp4"
+                app:srcCompat="@drawable/backbuttonmain" />
+
+            <ImageView
+                android:id="@+id/rmpmenubtn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rmpbackbtn"
+                app:srcCompat="@drawable/rmpmenubtn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/confirmrmplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C9000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/choosetokenbg"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/nousertxtview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:fontFamily="@font/rcbold"
+                    android:gravity="center"
+                    android:text="Do you really want to remove this player?"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmremovepieceview" />
+
+                <ImageView
+                    android:id="@+id/confirmremovepieceview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/redpiece" />
+
+                <ImageView
+                    android:id="@+id/confirmrmpnobtn"
+                    android:layout_width="120dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/confirmrmpyesbtn"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nousertxtview"
+                    app:srcCompat="@drawable/exitnobtn" />
+
+                <ImageView
+                    android:id="@+id/confirmrmpyesbtn"
+                    android:layout_width="120dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/confirmrmpnobtn"
+                    app:layout_constraintTop_toBottomOf="@+id/nousertxtview"
+                    app:srcCompat="@drawable/exityesbtn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ingamequitlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ingamequitdialog" />
+
+        <ImageView
+            android:id="@+id/ingamequitlayoutyesbtn"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView113"
+            app:layout_constraintEnd_toStartOf="@+id/ingamequitlayoutsoundbtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView113"
+            app:srcCompat="@drawable/exityesbtn" />
+
+        <ImageView
+            android:id="@+id/ingamequitlayoutsoundbtn"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView113"
+            app:layout_constraintEnd_toStartOf="@+id/ingamequitlayoutmusicbtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ingamequitlayoutyesbtn"
+            app:layout_constraintTop_toTopOf="@+id/imageView113"
+            app:srcCompat="@drawable/soundon" />
+
+        <ImageView
+            android:id="@+id/ingamequitlayoutmusicbtn"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView113"
+            app:layout_constraintEnd_toStartOf="@+id/ingamequitlayoutnobtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ingamequitlayoutsoundbtn"
+            app:layout_constraintTop_toTopOf="@+id/imageView113"
+            app:srcCompat="@drawable/musicoff" />
+
+        <ImageView
+            android:id="@+id/ingamequitlayoutnobtn"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView113"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ingamequitlayoutmusicbtn"
+            app:layout_constraintTop_toTopOf="@+id/imageView113"
+            app:srcCompat="@drawable/exitnobtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

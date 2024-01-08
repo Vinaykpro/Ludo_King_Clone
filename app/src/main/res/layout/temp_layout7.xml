@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/congratulationsscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AE000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/winnerslistinnerlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/settingsbg"
+        android:paddingTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/congratsscreensoundbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/winnerpositionlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/winnerlistpname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/winnerlistp1"
+                    app:layout_constraintStart_toEndOf="@+id/winnerlistp1"
+                    app:layout_constraintTop_toTopOf="@+id/winnerlistp1" />
+
+                <ImageView
+                    android:id="@+id/winnerliscrown1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/listwinner1crown" />
+
+                <ImageView
+                    android:id="@+id/winnerlistp1"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/winnerliscrown1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bluepiece" />
+
+                <ImageView
+                    android:id="@+id/winorlose1"
+                    android:layout_width="100dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/winner1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/winnerpositionlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/winnerpositionlayout1">
+
+                <TextView
+                    android:id="@+id/winnerlistpname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/winnerlistp2"
+                    app:layout_constraintStart_toEndOf="@+id/winnerlistp2"
+                    app:layout_constraintTop_toTopOf="@+id/winnerlistp2" />
+
+                <ImageView
+                    android:id="@+id/winnerliscrown2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/listwinner2crown" />
+
+                <ImageView
+                    android:id="@+id/winnerlistp2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/winnerliscrown2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/redpiece" />
+
+                <ImageView
+                    android:id="@+id/winorlose2"
+                    android:layout_width="100dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/winner1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/winnerpositionlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/winnerpositionlayout2">
+
+                <TextView
+                    android:id="@+id/winnerlistpname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 3"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/winnerlistp3"
+                    app:layout_constraintStart_toEndOf="@+id/winnerlistp3"
+                    app:layout_constraintTop_toTopOf="@+id/winnerlistp3" />
+
+                <ImageView
+                    android:id="@+id/winnerliscrown3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/listwinner3crown" />
+
+                <ImageView
+                    android:id="@+id/winnerlistp3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/winnerliscrown3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/greenpiece" />
+
+                <ImageView
+                    android:id="@+id/winorlose3"
+                    android:layout_width="100dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/winner1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/winnerpositionlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/winnerpositionlayout3">
+
+                <TextView
+                    android:id="@+id/winnerlistpname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="5"
+                    android:text="Player 4"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/winnerlistp4"
+                    app:layout_constraintStart_toEndOf="@+id/winnerlistp4"
+                    app:layout_constraintTop_toTopOf="@+id/winnerlistp4" />
+
+                <ImageView
+                    android:id="@+id/winnerliscrown4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/listwinner1crown" />
+
+                <ImageView
+                    android:id="@+id/winnerlistp4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/winnerliscrown4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/yellowpiece" />
+
+                <ImageView
+                    android:id="@+id/winorlose4"
+                    android:layout_width="100dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/loser1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/congratsscreenmenubtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/congratsscreensoundbtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/rmpmenubtn" />
+
+        <ImageView
+            android:id="@+id/congratsscreenreplaybtn"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/congratssharebtn"
+            app:srcCompat="@drawable/replaybtn" />
+
+        <ImageView
+            android:id="@+id/congratsscreensoundbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/congratssharebtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/congratsscreenmenubtn"
+            app:layout_constraintTop_toTopOf="@+id/congratsscreenmenubtn"
+            app:srcCompat="@drawable/soundon" />
+
+        <ImageView
+            android:id="@+id/congratssharebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/congratsscreenreplaybtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/congratsscreensoundbtn"
+            app:layout_constraintTop_toTopOf="@+id/congratsscreenmenubtn"
+            app:srcCompat="@drawable/sharebtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView118"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/winnerslistinnerlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/winnerslistinnerlayout"
+        app:srcCompat="@drawable/congratsscrolliconwinnerlist" />
+
+    <ImageView
+        android:id="@+id/imageView119"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView118"
+        app:layout_constraintStart_toStartOf="@+id/imageView118"
+        app:layout_constraintTop_toTopOf="@+id/imageView118"
+        app:srcCompat="@drawable/newglow" />
+
+    <ImageView
+        android:id="@+id/imageView129"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="120dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView118"
+        app:layout_constraintTop_toTopOf="@+id/imageView118"
+        app:srcCompat="@drawable/newglow" />
+
+    <ImageView
+        android:id="@+id/imageView130"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="12dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView118"
+        app:layout_constraintTop_toTopOf="@+id/imageView118"
+        app:srcCompat="@drawable/newglow" />
+
+    <ImageView
+        android:id="@+id/imageView131"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="15dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView118"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/newglow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
