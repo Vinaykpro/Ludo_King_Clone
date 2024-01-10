@@ -46,6 +46,8 @@ Feel free to review the code, submit issues, or contribute to the project by sen
 
 If you simply want to experience the Ludo King Clone without exploring the source code, you can download the APK file and install it on your Android device.
 
+![Installation preview](https://github.com/Vinaykpro/Ludo_King_Clone/blob/master/installation_preview.gif)
+
 1. **Download the APK:**
    Click [Here](https://dl.dropboxusercontent.com/scl/fi/1xohp4h0t8t7uuicmfdxf/Ludo-King-Clone-by-Vinaykpro.apk?rlkey=597fiav4fxbfgohvydkvm7mzm&dl=0) to download the APK file.
 
