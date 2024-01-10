@@ -6,7 +6,7 @@ Welcome to the repository for my Ludo King Clone project! This project was devel
 
 ## Game Preview
 
-![Ludo King Clone Preview](https://uc9306e7a76d1179e3b325522e3c.previews.dropboxusercontent.com/p/thumb/ACJg0xrHiUJL4h15TJx7CB_zbxdoiP5oprp7G-NgpA3wlwBhGjZxi8yXsdzEz1oyflWr5cu75i4kb9vQzarCzjoi-mmHOZye3rro_dgBp6TEiCvfS-IsmfKAXzjnN-oaTBwuVBh6p0AY7Ee1tsXvk8p1PCoxWwHkacQenw29146-PzM84qmOyzYp_bvqcYCbKOeVMfwPvPmII2KHtd9tpW8sCjgQsBMBWtIMmWf8bbwiQV1a0s6duN0Sm0vPu_YW8Fpo--DGA_bayJ4LKsfWAgZEvnAIEuU3iLs7LQ8T6lxpAV7QduS7clyMiZ4sH1eHlnLPOIxFhhPcIyCbUY_Wd_tjYZ6iFRYtsmrt-ohCDh4ZAcJ-MzNfSmyOYo618bN_qSw9-cIDGNT8p1K3Uy7AUWWFYRe3N7gI5E8VK6wR-ug_Ii8V01XlBEdS_VCYmlciUDw/p.gif)
+![Ludo King Clone Preview](https://github.com/Vinaykpro/Ludo_King_Clone/blob/master/ludo_clone_preview.gif)
 
 Watch a quick preview of the Ludo King Clone to see the gameplay in action!
 
