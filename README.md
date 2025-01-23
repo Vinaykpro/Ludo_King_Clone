@@ -10,6 +10,14 @@ Welcome to the repository for my Ludo King Clone project! This project was devel
 
 Watch a quick preview of the Ludo King Clone to see the gameplay in action!
 
+## Controlling game with remote preview
+
+![Remote Control Preview](https://github.com/Vinaykpro/Ludo_King_Clone/blob/master/remotecontrolled.gif)
+
+We can control this game remotely so that one could always win 😜 you can watch the full video here in my youtube channel:
+https://youtu.be/LZA4MgA7pQo?feature=shared
+
+
 ## Features
 
 - **Gameplay Replication:** The project faithfully reproduces the gameplay mechanics of the classic Ludo King, allowing users to experience the thrill of the game on their Android devices.
